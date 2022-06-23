@@ -25,3 +25,70 @@
 // {
 //         Console.Write("Second num is quad og second ");
 // }
+
+// Задача 3
+
+// int day;
+
+// Console.Write("Input a day number: ");
+
+// day = Convert.ToInt32(Console.ReadLine()); 
+
+//     if(day == 1)
+// {
+//     Console.WriteLine ("Mon");
+    
+// }
+
+//     if(day == 2)
+
+// {
+//     Console.WriteLine ("Thu");
+    
+// }
+
+//     if(day == 3)
+
+// {
+//     Console.WriteLine ("Wen");
+    
+// }
+//     if(day == 4)
+
+// {
+//     Console.WriteLine ("Thu");
+    
+// }
+//     if(day == 5)
+
+// {
+//     Console.WriteLine ("Fri");
+    
+// }
+//     if(day == 6)
+
+// {
+//     Console.WriteLine ("Sat");
+    
+// }
+//     if(day == 7)
+
+// {
+//     Console.WriteLine ("Sun");
+    
+// }
+//     else
+// {
+//         Console.Write("Wrong number");
+// }
+
+// Задача 4
+
+int num1, quad;
+
+Console.Write("Input a number: ");
+num1 = Convert.ToInt32(Console.ReadLine()); 
+
+quad=num1*num1;
+
+Console.Write("Your quad number " + quad);
