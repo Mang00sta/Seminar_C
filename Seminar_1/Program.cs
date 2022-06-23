@@ -84,11 +84,26 @@
 
 // Задача 4
 
-int num1, quad;
+// int num1, quad;
 
-Console.Write("Input a number: ");
-num1 = Convert.ToInt32(Console.ReadLine()); 
+// Console.Write("Input a number: ");
+// num1 = Convert.ToInt32(Console.ReadLine()); 
 
-quad=num1*num1;
+// quad=num1*num1;
 
-Console.Write("Your quad number " + quad);
+// Console.Write("Your quad number " + quad);
+
+// Задача 5
+
+int n, current;
+
+Console.Write("input a num ");
+n = Convert.ToInt32(Console.ReadLine());
+
+current=n* (-1);
+
+while(current <= n)
+{
+    Console.Write(current + " ");
+    current++; //current = current + 1
+}
