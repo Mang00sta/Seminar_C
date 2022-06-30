@@ -129,3 +129,72 @@ void IsQad ()
 }
 IsQad();
 /*/
+
+
+/*
+void ShowArea(int quart)
+{
+    if (quart>=1 && quart <=4)
+{
+    if (quart == 1) Console.WriteLine("In this quart x >0 and y>0");
+    if (quart == 2) Console.WriteLine("In this quart x <0 and y>0");
+    if (quart == 3) Console.WriteLine("In this quart x <0 and y<0");
+    if (quart == 4) Console.WriteLine("In this quart x <0 and y<0");
+}
+else
+    Console.WriteLine("number incorrect");
+}
+
+Console.Write("input number of quart: ");
+int numQuart = Convert.ToInt32(Console.ReadLine());
+
+ShowArea(numQuart);
+/*/
+
+// Задача
+/* Напишите программу, которая принимает на вход координаты точки (X и Y), 
+причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, в которой находится эта точка.
+*/
+/*
+int NumQuad(int x, int y)
+{
+    int chet=-1;
+    if (x==0 || y==0) return 0;
+    if (x>0 && y>0)  chet=1;
+    if (x<0 && y>0)  chet=2; 
+    if (x<0 && y<0)  chet=3; 
+    if (x>0 && y<0)  chet=4 ;    
+    return chet;
+}
+
+Console.WriteLine("Insert x "  );
+int x0 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Insert y "  );
+int y0 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine(NumQuad(x0,y0));
+//int number=NumQuad(x0,y0); // вернули x,y
+//Console.WriteLine("Result " + number); это вариант более большой
+
+/*/
+
+// Задача
+/*Напишите программу, которая принимает на вход число (N) и 
+выдаёт квадраты чисел от 1 до N.*/
+
+//*
+void QuadN(int n)
+{
+    int current=1;
+    
+    while (n>=current)        
+        {
+           Console.WriteLine(current*current);
+           current++; 
+        }
+} 
+
+Console.WriteLine("Insert n "  );
+int num = Convert.ToInt32(Console.ReadLine());
+
+QuadN(num);
