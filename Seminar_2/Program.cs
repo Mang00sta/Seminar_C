@@ -198,3 +198,4 @@ Console.WriteLine("Insert n "  );
 int num = Convert.ToInt32(Console.ReadLine());
 
 QuadN(num);
+//*/
