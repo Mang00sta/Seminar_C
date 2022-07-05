@@ -239,7 +239,7 @@ int Kolich(int n)
 
         return current;
    }
-*/
+/*/
 //! Через while 
 
 // int Kolich(int n)
