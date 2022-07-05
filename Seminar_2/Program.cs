@@ -1,4 +1,5 @@
-﻿//Задача 1 
+﻿
+//Задача 1 
 //Напишите программу, которая выводит случайное трёхзначное число 
 //и удаляет вторую цифру этого числа.
 /*
@@ -182,7 +183,7 @@ Console.WriteLine(NumQuad(x0,y0));
 /*Напишите программу, которая принимает на вход число (N) и 
 выдаёт квадраты чисел от 1 до N.*/
 
-//*
+/*
 void QuadN(int n)
 {
     int current=1;
@@ -199,3 +200,113 @@ int num = Convert.ToInt32(Console.ReadLine());
 
 QuadN(num);
 //*/
+
+
+// !Семинар 3
+// !Задача
+// Напишите программу, которая принимает на вход число (А) и выдаёт сумму чисел от 1 до А.
+/*
+int FindSum(int a)
+{
+    int sum=0;
+
+    for (int current=1; current<=a; current++)
+        sum +=current;
+    
+    return sum;
+}
+
+Console.WriteLine("Insert n "  );
+int num = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Result  " + FindSum(num) ); // переписать с $
+*/
+
+// !задача 
+// Напишите программу, которая принимает на вход число и выдаёт количество цифр в числе.
+//! через for 
+/*
+int Kolich(int n)
+    {
+     int current=0;
+     for (; n>=current; current++)
+        {
+            n=n/10;
+            //Console.WriteLine(current);
+            //Console.WriteLine(n);
+        }
+         
+
+        return current;
+   }
+*/
+//! Через while 
+
+// int Kolich(int n)
+//     {
+//         int current=0;
+//         if (current<=n)
+//         {
+//             while (n>0)
+//             {
+//                 n=n/10;  
+//                 current++;   
+//                 Console.WriteLine(current);
+//             }
+//         }
+//         //Console.WriteLine(current);    
+//         return current;
+//     }
+
+// ! Через while но наоборот 
+
+/* 
+int Kolich(int num) 
+{ 
+    int result = 1; 
+    int i = 1; 
+    while(num / i > 10) 
+    { 
+        i = i * 10; 
+        result++; 
+    } 
+    return result; 
+} 
+Console.WriteLine("Insert n "  );
+int n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine (Kolich(n));
+*/ 
+
+// !задача 
+// Напишите программу, которая принимает на вход число N и выдаёт произведение чисел от 1 до N.
+
+//n!=1*2*3*4*n
+/* 
+int Proisv(int N) 
+{ 
+    int result = 1; 
+    for(int i = 1; i <= N; i++) 
+        result = result * i; 
+    return result; 
+} 
+Console.Write("Введите число "); 
+int n = Convert.ToInt32(Console.ReadLine()); 
+Console.WriteLine(Proisv(n)); 
+*/ 
+
+// !Задача 
+//Напишите программу, которая принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+/*
+int Step(int a, int b) 
+{ 
+    int result = 1; 
+    for(int i = 1; i <= b; i++) 
+        result = result * a; 
+    return result; 
+} 
+Console.Write("Введите первое число "); 
+int n = Convert.ToInt32(Console.ReadLine()); 
+Console.Write("Введите второе число "); 
+int m = Convert.ToInt32(Console.ReadLine()); 
+Console.WriteLine(Step(n, m));
+*/
