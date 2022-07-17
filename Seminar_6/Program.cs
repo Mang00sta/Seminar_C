@@ -32,7 +32,7 @@ int FindDigSumm (int [,] array)
      if (array.GetLength(0)== array.GetLength(1)) // проверяем если массив квадратный
     {
          for (int i =0; i<array.GetLength(0); i++) // 0??
-            sim+= array[i,i];
+            sum+= array[i,i];
     }
     return sum;
 
@@ -68,6 +68,7 @@ Console.WriteLine(" input");
 
 //!Задача
 //Задайте двумерный массив размера m на n, каждый элемент в массиве находится по формуле: Aij = i+j. Выведите полученный массив на экран.
+/*
 int[,] CreateRandom2DArray1(int rows, int columns)
 {
     int[,] newArray = new int[rows,columns];
@@ -78,11 +79,12 @@ int[,] CreateRandom2DArray1(int rows, int columns)
     return newArray;     
 
 }
-
+/*/
 
 
 //!Задача
 //Задайте двумерный массив. Найдите элементы, у которых оба индекса чётные, и замените эти элементы на их квадраты.
+/*
 int[,] FindEvenChange(int[,] array)
 {
     for(int i=0; i < array.GetLength(0); i++)
@@ -107,11 +109,11 @@ Show2Array(myArray123);
 Console.WriteLine();
 myArray123 = FindEvenChange(myArray123);
 Show2Array(myArray123);
-
+/*/
 //!Задача
 //Задайте двумерный массив. Найдите сумму элементов, находящихся на главной диагонали (с индексами (0,0); (1;1) и т.д.
 
-/*
+//*
 Console.WriteLine(" input");
     int m = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine(" input");
@@ -123,5 +125,5 @@ Console.WriteLine(" input");
 
     int [,] myArray = CreateRandom2Array (m,n,min,max);
     Show2Array (myArray);
-    Console.WriteLine(" Sum " + FindDigSumm(sum));
-/*/
+    Console.WriteLine(" Sum " + FindDigSumm(myArray));
+//*/
