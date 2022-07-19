@@ -25,32 +25,7 @@ void Show2Array (int [,] array)
     
 }
 
-int FindDigSumm (int [,] array)
-{
-    int sum = 0;
 
-     if (array.GetLength(0)== array.GetLength(1)) // проверяем если массив квадратный
-    {
-         for (int i =0; i<array.GetLength(0); i++) // 0??
-            sum+= array[i,i];
-    }
-    return sum;
-
-
-
-    // if (array.GetLength(0)== array.GetLength(1))
-    // {
-    //      for (int i =0; i<array.GetLength(0); i++) // 0??
-    //     {
-    //         for (int j=0; j<array.GetLength(1); j++) //??
-
-    //         if (i==j) sum+= array [i,j];
-
-    //     }
-    // }
-    // return sum;
-
-}
 
 /*
 Console.WriteLine(" input");
@@ -113,7 +88,34 @@ Show2Array(myArray123);
 //!Задача
 //Задайте двумерный массив. Найдите сумму элементов, находящихся на главной диагонали (с индексами (0,0); (1;1) и т.д.
 
-//*
+/*
+
+int FindDigSumm (int [,] array)
+{
+    int sum = 0;
+
+     if (array.GetLength(0)== array.GetLength(1)) // проверяем если массив квадратный
+    {
+         for (int i =0; i<array.GetLength(0); i++) // 0??
+            sum+= array[i,i];
+    }
+    return sum;
+
+
+
+    // if (array.GetLength(0)== array.GetLength(1))
+    // {
+    //      for (int i =0; i<array.GetLength(0); i++) // 0??
+    //     {
+    //         for (int j=0; j<array.GetLength(1); j++) //??
+
+    //         if (i==j) sum+= array [i,j];
+
+    //     }
+    // }
+    // return sum;
+
+}
 Console.WriteLine(" input");
     int m = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine(" input");
@@ -127,3 +129,33 @@ Console.WriteLine(" input");
     Show2Array (myArray);
     Console.WriteLine(" Sum " + FindDigSumm(myArray));
 //*/
+
+            Console.Write("Введите строку:");
+            int pos1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите столбец:");
+            int pos2 = Convert.ToInt32(Console.ReadLine());
+            int n = 5; // размер массива
+            int m = 7; // размер массива
+            Random random = new Random();
+            int[,] arr = new int[n, m];
+            Console.WriteLine("Исходный массив:");
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    arr[i, j] = random.Next(10, 99);
+                    Console.Write("{0} ", arr[i, j]);
+                }
+                Console.WriteLine();
+            }
+            if (pos1 < 0 | pos1 > arr.GetLength(0) - 1 | pos2 < 0 | pos2 > arr.GetLength(1) - 1)
+            {
+                Console.WriteLine("Элемент не существует");
+            }
+            else
+            {
+                Console.WriteLine("Значение элемента массива = {0}", arr[pos1, pos2]);
+            }
+            Console.ReadLine();
+ 
+        

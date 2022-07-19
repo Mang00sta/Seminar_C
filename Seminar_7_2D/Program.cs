@@ -38,12 +38,14 @@ void Show2Array (int [,] array)
 
 int[,] ChangeString (int[,] array)
 {
+    
+    
     for(int j = 0; j < array.GetLength(0); j++)
-    {
-            int temp = array [0,j];
-    array[0,j] = array[array.GetLength(0) - 1,j];
-    array[array.GetLength(0) - 1,j] = temp;    
-    }
+        {
+        int temp = array [0,j];
+        array[0,j] = array[array.GetLength(0) - 1,j];
+        array[array.GetLength(0) - 1,j] = temp;    
+        }
     return array;
 }
     // 1 2 3
