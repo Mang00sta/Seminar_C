@@ -168,7 +168,7 @@ int MaxNumber()
 }    
 int number=MaxNumber();
 Console.WriteLine("Result " + number);
-/
+
 
 //Задача3 Напишите программу, которая принимает на вход число и проверяет,кратно ли оно одновременно 7 и 23
 
@@ -327,7 +327,7 @@ int Kolich(int n)
 
         return current;
    }
-   /
+   
 //! Через while 
 
 // int Kolich(int n)
@@ -541,7 +541,7 @@ int [] Array1 = CreateRandomArray (size, min, max);
 ShowArray(Array1);
 int [] Array2 = Find(Array1);
 ShowArray(Array2);
-/
+
 
 // !Задача Задайте одномерный массив из 20 случайных чисел. Найдите количество элементов массива, значения которых лежат в отрезке [10,99].
 
@@ -565,9 +565,8 @@ void ShowArray (int[] array) // метод подбора
 int [] Find (int [] Array)
 {
     int count=0;
-    for (int i=0; i<Array.Length; i++)
-        
-        if (Array[i]=>10 && Array[i]<=99) 
+    for (int i=0; i<Array.Length; i++)        
+        if (Array[i]>10 && Array[i]<99)
         {
             count++;    
         }
@@ -648,7 +647,7 @@ int [] ReverseArray(int[] array)
 int [] myArray = {3,5,1,8,2,9,4};
 myArray=ReverseArray(myArray);
 ShowArray(myArray);
-/
+
 //! Задача Напишите программу, которая будет преобразовывать десятичное число в двоичное.
 // 18/2 - 9 0
 // 9/2 -  4 1
@@ -669,7 +668,7 @@ string ChangeGigitSystem (int num)
     
 }
 Console.WriteLine(ChangeGigitSystem(18));
-/
+
 
 //! Задача Напишите программу, которая принимает на вход три числа и проверяет, может ли существовать треугольник с сторонами такой длины.
 //a=b+c 3 числа
@@ -690,7 +689,7 @@ int c=Convert.ToInt32(Console.ReadLine());
 Console.WriteLine();
 
 NumbersTri (a,b,c);
-/
+
 
 bool NumbersTri (int num1, int num2, int num3)
 {
@@ -731,7 +730,7 @@ int [] CreateArray (int n) // создание массива с помошью 
 Console.Write("Input array - A ");
 int n=Convert.ToInt32(Console.ReadLine());
 ShowArray(CreateArray(n));
-/
+
 
 
 //!Семинар 6
