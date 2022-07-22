@@ -1015,7 +1015,7 @@ int[,] ChangeString (int[,] array)
     Show2Array (myArray);
     Show2Array (Cut2DArray(myArray)); 
 
-    //!Семинар 8 
+    //!Семинар 8 Рекурсия\ 
 
     int [,] CreateRandom2Array(int rows, int columns)
 {
